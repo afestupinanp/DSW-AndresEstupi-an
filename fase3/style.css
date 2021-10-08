@@ -70,6 +70,11 @@ ul.nav {
         align-self: flex-start;
         flex-grow: 1;
     }
+
+    .display-none-celulares {
+        display: none !important;
+    }
+
 }
 
 ul.nav a {
