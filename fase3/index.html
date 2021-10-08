@@ -12,43 +12,52 @@
     </head>
     <body>
         <header>
-            <h3>Sintaxis y Selectores CSS e Interacción Humano-Ordenador</h3>
+            <h3 class="centrado">Sintaxis y Selectores CSS e Interacción Humano-Ordenador</h3>
+            <nav>
+                <ul class="nav">
+                    <div class="seccion-normal">
+                        <li class="nav-inicio">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="margin-max">
+                            <a class="seccion-responsive-iniciador" href="index.html">
+                                &#9776;
+                            </a>
+                        </li>
+                    </div>
+                    <div class="seccion-responsive">
+                        <li class="dropdown">
+                            <a class="dropdown-iniciador" href="javascript:;">Temas</a>
+                            <ul class="display-none">
+                                <li>
+                                    <a href="tema1.html">Tema 1</a>
+                                </li>
+                                <li>
+                                    <a href="tema2.html">Tema 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-iniciador" href="javascript:;">Recursos digitales</a>
+                            <ul class="display-none">
+                                <li>Recurso 1</li>
+                                <li>Recurso 2</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-iniciador" href="javascript:;">Aprendizaje</a>
+                            <ul class="display-none">
+                                <li>Actividad 1</li>
+                                <li>Actividad 2</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="acerca-de.html">Acerca de</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul class="nav">
-                <li class="margin-auto">
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    Temas
-                    <ul class="display-none">
-                        <li>
-                            <a href="tema1.html">Tema 1</a>
-                        </li>
-                        <li>
-                            <a href="tema2.html">Tema 2</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    Recursos digitales
-                    <ul class="display-none">
-                        <li>Recurso 1</li>
-                        <li>Recurso 2</li>
-                    </ul>
-                </li>
-                <li>
-                    Aprendizaje
-                    <ul class="display-none">
-                        <li>Actividad 1</li>
-                        <li>Actividad 2</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="acerca-de.html">Acerca de</a>
-                </li>
-            </ul>
-        </nav>
         <div class="contenido">
             <section>
                 <p>El propósito de este sitio web es compartir información acerca de la sintáxis que posee el Lenguaje de Estilos en Cascada (Cascading Style Sheets) y mostrar la interacción entre el computador y el ser humano, así como uno de los medios por los que interactúa el ser humano con un sistema de información.</p>
@@ -111,8 +120,10 @@
             <footer>
                 <h1>Datos de contacto</h1>
                 <b>Skype: </b>andrypelaez00<br/>
-                <b>Correo electrónico: </b> afestupinanp@unadvirtual.edu.co
+                <b>Correo electrónico: </b> <a href="mailto:afestupinanp@unadvirtual.edu.co">afestupinanp@unadvirtual.edu.co</a>
+                <span style="display: block;" id="anio" class="centrado">&copy; 2021</span>
             </footer>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
