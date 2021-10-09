@@ -74,7 +74,24 @@ ul.nav {
     .display-none-celulares {
         display: none !important;
     }
+    
+    .row {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
 
+    .col-inicio {
+        align-self: center;
+        flex-grow: 1;
+    }
+
+}
+
+.seccion-imagen {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 ul.nav a {
@@ -115,6 +132,30 @@ ul > li {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.col-contacto {
+    flex-grow: 3;
 }
 
 @media screen and (min-width: 1200px) {
@@ -198,4 +239,19 @@ header {
 
 .dropdown:hover {
     cursor: pointer;
+}
+
+.imagen-perfil {
+    border-radius: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-inicio {
+    flex-grow: 3;
+}
+
+.row-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
