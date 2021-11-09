@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="none" />
+        <meta name="AdsBot-Google" content="none" />
+        <meta name="theme-color" content="#81b97f" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Unidad 2 - Fase 3 - Diseño y Construcción II</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h3 class="centrado titulo-pagina">Sintaxis y Selectores CSS e Interacción Humano-Ordenador</h3>
+                <ul class="nav">
+                    <div class="seccion-normal">
+                        <li class="nav-inicio">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="margin-max">
+                            <a class="seccion-responsive-iniciador" href="javascript:;">
+                                &#9776;
+                            </a>
+                        </li>
+                    </div>
+                    <div class="seccion-responsive display-none-celulares">
+                        <li class="dropdown">
+                            <a class="dropdown-iniciador" href="javascript:;">Temas</a>
+                            <ul class="display-none">
+                                <li>
+                                    <a href="tema1.html">Tema 1</a>
+                                </li>
+                                <li>
+                                    <a href="tema2.html">Tema 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-iniciador" href="javascript:;">Recursos digitales</a>
+                            <ul class="display-none">
+                                <li>
+                                    <a href="recurso-1.html">Recurso 1 - CSS</a>
+                                </li>
+                                <li>
+                                    <a href="recurso-2.html">Recurso 2 - Interacción HC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-iniciador" href="javascript:;">Aprendizaje</a>
+                            <ul class="display-none">
+                                <li>
+                                    <a href="actividad1.html">Actividad 1</a>
+                                </li>
+                                <li>
+                                    <a href="actividad2.html">Actividad 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="acerca-de.html">Acerca del autor</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="contenido">
+            <section>
+                <div class="row">
+                    <div class="col">
+                        <h3>Acerca del sitio web</h3>
+                        <p>El propósito de este sitio web es compartir información acerca de la sintáxis que posee el Lenguaje de Estilos en Cascada (Cascading Style Sheets) y mostrar la interacción entre el computador y el ser humano, así como uno de los medios por los que interactúa el ser humano con un sistema de información.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Conectate con la UNAD</h3>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </section>
+            <article>
+                <h1>El Lenguaje de Estilos en Cascada</h1>
+                <!-- ---------------------------------------- -->
+                <h4>Introducción</h4>
+                <p>El Lenguaje de Estilos en Cascada, conocido también Hojas de Estilo en Cascada, Cascading Style Sheets o simplemente CSS, es un lenguaje de estilos que permite definir la presentación y el renderizado que tendrá cada uno de los elementos que posee un documento que esté escrito con el Lenguaje de Marcado de Hipertexto (HTML) o XML.<br/>
+                    Está definido bajo estándar de la W3C, por lo que debe de ser soportado por todos los navegadores recientes, esto incluye Google Chrome (y derivados Chromium como Opera, Brave, Edge), Mozilla Firefox y Safari</p>
+                <h4>Los Selectores CSS</h4>
+                <p>CSS, bajo su estándar, hace uso de los selectores. Los selectores son palabras claves con las que los motores de renderizado CSS de los navegadores pueden saber que conjunto de propiedades debe de aplicarse a cada elemento.
+                    Los selectores pueden ser etiquetas HTML, nombres de clases de elementos, IDs de elementos, o selectores más complejos que permitan elegir que elementos HTML debe de aplicarse el conjunto de propiedades deseada.<br/>
+                    Por ejemplo, un selector puede ser la etiqueta <i>p</i>, o la etiqueta <i>button</i>. Estos selectores, entonces, son los que permiten definir un conjunto de propiedades, como se muestra en la siguiente ilustración.
+                </p>
+                <div class="centrado">
+                    <img class="img-responsive" src="images/mdn-csspartes.png" alt="Partes de una regla CSS: se define el selector, la propiedad, y el valor que tendrá la propiedad." />
+                </div>
+                <p>Los selectores CSS más básicos que pueden usarse son los elementos HTML, clases, y IDs.<br/>
+                    Para usar un elemento, basta con usar el nombre de una etiqueta HTML como selector.
+                    Para usar clases en el selector de CSS se debe de colocar un punto (.) seguido con un nombre para la clase. Por ejemplo, ".texto", ".color-rojo", entre otros. Este nombre debe de coincidir con el nombre dado en el atributo <i>class</i> del HTML.<br/>
+                    Para usar un ID de un elemento, basta con colocar un numeral (#) seguido de un nombre. Por ejemplo, "#btnIngresar", "#btnRegresar", "#seccionTexto". Este nombre debe de coincidir con el nombre dado en el atributo <i>id</i> del HTML, y debe de ser único.
+                    Puedes especificar más de un selector a la vez, separándolos por comas (,).
+                </p>
+                <h1>Referencias</h1>
+                <ul>
+                    <li>MDN Web Docs. (n.f). <i>CSS: Cascading Style Sheets (Hojas de Estilo en Cascada)</i>. Mozilla: Estados Unidos. Recuperado de: <a target="_blank" rel="noopener nofollow noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a></li>
+                    <li>MDN Web Docs. (n.f). <i>CSS básico - Aprende sobre desarrollo web. Anatomía de una regla CSS</i>. Mozilla: Estados Unidos. Recuperado de: <a target="_blank" rel="noopener nofollow noreferrer" href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics">https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics</a></li>
+                </ul>
+            </article>
+            <footer>
+                <div class="row">
+                    <div class="col col-contacto">
+                        <h3>Datos de contacto</h3>
+                        <img class="img-responsive centrado" src="images/logo-unad.png" alt="Logo UNAD." />
+                        <b>Skype: </b>andrypelaez00<br/>
+                        <b>Correo electrónico: </b> <a href="mailto:afestupinanp@unadvirtual.edu.co">afestupinanp@unadvirtual.edu.co</a>
+                        <br>
+                        <br>
+                        <p>Ingeniería de Sistemas</p>
+                        <p>Diseño web</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span style="display: block;" id="anio" class="centrado">&copy; 2021</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: Roboto, sans-serif;
+    color: rgb(35, 35, 35);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #b1ffae, rgba(255, 255, 255, 0.0));
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.418);
+    padding-bottom: 10px;
+}
+
+.titulo-pagina {
+    color: rgb(0, 110, 255);
+}
+
+ul.nav {
+    list-style-type: none;
+}
+
+.seccion-responsive > li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.margin-max {
+    display: none !important;
+}
+
+.seccion-normal, .seccion-responsive {
+    display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+    ul.nav > li, ul.nav .seccion-responsive > li {
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    ul.nav {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .seccion-normal {
+        display: flex;
+        flex-direction: row;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .margin-max {
+        display: flex !important;
+        align-self: flex-end;
+        flex-grow: 1;
+        align-content: flex-end;
+        justify-self: flex-end;
+        justify-content: flex-end;
+    }
+
+    .nav-inicio {
+        display: flex !important;
+        align-self: flex-start;
+        flex-grow: 1;
+    }
+
+    .display-none-celulares {
+        display: none !important;
+    }
+    
+    .row {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .col-inicio {
+        align-self: center;
+        flex-grow: 1;
+    }
+
+}
+
+.seccion-imagen {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul.nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+ul.nav a:hover {
+    color: #125d9b;
+}
+
+body {
+    margin: 0;
+}
+
+img.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+ul > li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contenido li {
+    line-height: 25px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.col-contacto {
+    flex-grow: 3;
+}
+
+@media screen and (min-width: 1200px) {
+    .contenido {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contenido {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .contenido {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background: url("images/header.png") no-repeat center;
+    background-size: cover;
+}
+
+.contenido {
+    padding-top: 130px;
+}
+
+.contenido *::selection {
+    background-color: #68c8ff;
+}
+
+.header *::selection {
+    background-color: #e2e2e2;
+}
+
+.display-none {
+    display: none;
+}
+
+.margin-auto {
+    margin-left: auto !important;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.dropdown ul {
+    position: absolute;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.418);
+    list-style: none;
+    padding: 0px;
+    width: 150px;
+}
+
+.dropdown ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+}
+
+.dropdown ul li * {
+    padding-left: 10px;
+}
+
+.dropdown ul li:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.imagen-perfil {
+    border-radius: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-inicio {
+    flex-grow: 3;
+}
+
+.row-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
