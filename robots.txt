@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: fase2/*
+Disallow: fase3/*
+Disallow: fase4/acerca-de.html

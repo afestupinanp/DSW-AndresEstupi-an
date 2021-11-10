@@ -3,3 +3,13 @@
 html, * {
     font-family: Roboto, sans-serif;
 }
+
+.imagen-fondo {
+    background: url("images/header.png") no-repeat center;
+    background-size: cover;
+    filter: blur(0.25);
+}
+
+.titulo-sitio {
+    color: #94b4fa;
+}
